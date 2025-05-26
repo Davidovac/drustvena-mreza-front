@@ -122,12 +122,7 @@ function submit(){
                 error.error.response
                 throw error
             }
-            setTimeout(() => null, 0)
-            let json = response.json()
-            return json
-        })
-        .then((data) => {
-            console.log(data)
+            return response.json()
         })
         .then(data => {
             window.location.href = '../index.html'
